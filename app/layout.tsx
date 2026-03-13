@@ -16,12 +16,6 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "AI Delivered — Human Solutions for a Robot World",
   description: "Custom tools for small business owners.",
-  icons: {
-    icon: [
-      { url: "/favicon.ico" },
-      { url: "/favicon.svg", type: "image/svg+xml" },
-    ],
-  },
 };
 
 export default function RootLayout({
