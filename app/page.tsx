@@ -121,11 +121,11 @@ export default function Home() {
       <div className={`fixed top-5 left-1/2 -translate-x-1/2 z-50 transition-all duration-700 ${showIsland ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"}`}>
         <div className="island-nav flex items-center gap-1 px-2 py-1.5 bg-[#0d0d0d]/90 backdrop-blur-xl rounded-full shadow-2xl shadow-black/20">
           {[{ id: "process", label: "Process" }, { id: "results", label: "Results" }, { id: "pricing", label: "Pricing" }, { id: "team", label: "Team" }].map((link) => (
-            <a key={link.id} href={`#${link.id}`} className={`px-3.5 py-1.5 rounded-full text-[11px] font-sans tracking-[0.06em] transition-all duration-300 ${active === link.id ? "bg-white/15 text-white" : "text-white/40 hover:text-white/70"}`}>
+            <a key={link.id} href={`#${link.id}`} className={`px-4 py-2.5 rounded-full text-[11px] font-sans tracking-[0.06em] transition-all duration-300 ${active === link.id ? "bg-white/15 text-white" : "text-white/40 hover:text-white/70"}`}>
               {link.label}
             </a>
           ))}
-          <Link href="/contact" className="ml-1 px-4 py-1.5 rounded-full bg-[#F5C842] text-[#0d0d0d] text-[11px] font-sans font-medium tracking-wide hover:bg-[#e3b835] transition-all duration-300">
+          <Link href="/contact" className="ml-1 px-5 py-2.5 rounded-full bg-[#F5C842] text-[#0d0d0d] text-[11px] font-sans font-medium tracking-wide hover:bg-[#e3b835] transition-all duration-300">
             Let&apos;s Talk
           </Link>
         </div>
@@ -142,7 +142,7 @@ export default function Home() {
           <p className="hero-fade font-sans text-[11px] md:text-xs tracking-[0.2em] uppercase text-[#0d0d0d]/25 mb-8">Human Solutions for a Robot World</p>
 
           <h1 className="hero-headline font-serif text-[clamp(3rem,9vw,8rem)] leading-[0.96] tracking-tight max-w-5xl">
-            You didn&apos;t start<br />your business to<br /><span className="text-[#0d0d0d]/12">drown in busywork.</span>
+            You didn&apos;t start{" "}<span className="hidden md:inline"><br /></span>your business to{" "}<span className="hidden md:inline"><br /></span><span className="text-[#0d0d0d]/12">drown in busywork.</span>
           </h1>
 
           <p className="hero-fade hero-fade-2 font-sans text-lg md:text-xl text-[#0d0d0d]/40 mt-12 max-w-lg leading-relaxed">We build quiet tools that take the grunt work off your plate — so you can get back to the work only you can do.</p>
@@ -162,7 +162,7 @@ export default function Home() {
       <section className="border-y border-[#0d0d0d]/6 overflow-hidden">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 py-10 md:py-12">
           <Reveal>
-            <div className="flex items-center justify-between gap-10 md:gap-8 overflow-x-auto no-scrollbar">
+            <div className="flex items-center justify-between gap-6 md:gap-8 overflow-x-auto no-scrollbar">
               {logos.map((logo) => (
                 <div key={logo.alt} className="logo-item flex-shrink-0 h-8 md:h-9 w-auto">
                   <Image src={logo.src} alt={logo.alt} height={36} width={130} className="h-full w-auto object-contain" style={{ maxWidth: "130px" }} />
@@ -227,7 +227,7 @@ export default function Home() {
                   <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10">
                     {/* Big stat */}
                     <div className="md:col-span-4">
-                      <p className="font-serif text-7xl md:text-8xl lg:text-9xl tracking-tighter leading-none text-[#0d0d0d]">
+                      <p className="font-serif text-5xl sm:text-7xl md:text-8xl lg:text-9xl tracking-tighter leading-none text-[#0d0d0d]">
                         {study.stat}
                       </p>
                       <p className="font-sans text-sm text-[#0d0d0d]/30 mt-3">
@@ -377,8 +377,8 @@ export default function Home() {
         <div className="max-w-[1200px] mx-auto px-6 md:px-12 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <span className="font-serif text-base text-[#0d0d0d]/25">AI Delivered</span>
           <div className="font-sans text-xs text-[#0d0d0d]/18 flex gap-6">
-            <span>drew@aidelivered.com</span>
-            <span>casey@aidelivered.com</span>
+            <a href="mailto:drew@aidelivered.com" className="hover:text-[#0d0d0d]/40 transition-colors duration-300">drew@aidelivered.com</a>
+            <a href="mailto:casey@aidelivered.com" className="hover:text-[#0d0d0d]/40 transition-colors duration-300">casey@aidelivered.com</a>
           </div>
         </div>
       </footer>

@@ -227,8 +227,8 @@ export default function ContactPage() {
         <div className="max-w-[1200px] mx-auto px-6 md:px-12 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <span className="font-serif text-base text-[#0d0d0d]/30">AI Delivered</span>
           <div className="font-sans text-xs text-[#0d0d0d]/20 flex gap-6">
-            <span>drew@aidelivered.com</span>
-            <span>casey@aidelivered.com</span>
+            <a href="mailto:drew@aidelivered.com" className="hover:text-[#0d0d0d]/40 transition-colors duration-300">drew@aidelivered.com</a>
+            <a href="mailto:casey@aidelivered.com" className="hover:text-[#0d0d0d]/40 transition-colors duration-300">casey@aidelivered.com</a>
           </div>
         </div>
       </footer>
