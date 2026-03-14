@@ -148,7 +148,7 @@ export default function Home() {
           <p className="hero-fade hero-fade-2 font-sans text-lg md:text-xl text-[#0d0d0d]/40 mt-12 max-w-lg leading-relaxed">We build quiet tools that take the grunt work off your plate — so you can get back to the work only you can do.</p>
 
           <div className="hero-fade hero-fade-3 mt-14 flex items-center gap-5">
-            <Link href="/contact" className="group inline-flex items-center gap-2.5 px-8 py-4 bg-[#F5C842] text-[#0d0d0d] text-sm font-sans font-medium tracking-wide hover:bg-[#e3b835] transition-all duration-300 hover:shadow-lg hover:shadow-[#F5C842]/20">
+            <Link href="/contact" className="group inline-flex items-center gap-2.5 px-8 py-4 rounded-full bg-[#F5C842] text-[#0d0d0d] text-sm font-sans font-medium tracking-wide hover:bg-[#e3b835] transition-all duration-300 hover:shadow-lg hover:shadow-[#F5C842]/20">
               Book a Free Call<span className="inline-block transition-transform duration-300 group-hover:translate-x-0.5">→</span>
             </Link>
             <span className="text-[11px] font-sans text-[#0d0d0d]/18">15 min · No pitch · Just honest answers</span>
@@ -284,7 +284,7 @@ export default function Home() {
                       </li>
                     ))}
                   </ul>
-                  <Link href="/contact" className={`mt-8 inline-block text-center py-3 text-sm font-sans font-medium tracking-wide transition-all duration-300 ${tier.highlight ? "bg-[#F5C842] text-[#0d0d0d] hover:bg-[#e3b835] hover:shadow-lg hover:shadow-[#F5C842]/20" : "border border-[#0d0d0d]/10 text-[#0d0d0d]/45 hover:border-[#0d0d0d]/20 hover:text-[#0d0d0d]/65"}`}>
+                  <Link href="/contact" className={`mt-8 inline-block text-center py-3 rounded-full text-sm font-sans font-medium tracking-wide transition-all duration-300 ${tier.highlight ? "bg-[#F5C842] text-[#0d0d0d] hover:bg-[#e3b835] hover:shadow-lg hover:shadow-[#F5C842]/20" : "border border-[#0d0d0d]/10 text-[#0d0d0d]/45 hover:border-[#0d0d0d]/20 hover:text-[#0d0d0d]/65"}`}>
                     Get started →
                   </Link>
                 </div>
@@ -365,7 +365,7 @@ export default function Home() {
             <p className="font-sans text-sm text-[#0d0d0d]/35 mt-8 max-w-md mx-auto leading-relaxed">Book a free 15-minute call. We&apos;ll listen, ask the right questions, and tell you honestly whether we can help.</p>
           </Reveal>
           <Reveal delay={180}>
-            <Link href="/contact" className="group inline-flex items-center gap-2.5 mt-10 px-8 py-4 bg-[#F5C842] text-[#0d0d0d] text-sm font-sans font-medium tracking-wide hover:bg-[#e3b835] transition-all duration-300 hover:shadow-lg hover:shadow-[#F5C842]/20">
+            <Link href="/contact" className="group inline-flex items-center gap-2.5 mt-10 px-8 py-4 rounded-full bg-[#F5C842] text-[#0d0d0d] text-sm font-sans font-medium tracking-wide hover:bg-[#e3b835] transition-all duration-300 hover:shadow-lg hover:shadow-[#F5C842]/20">
               Book a Free Call<span className="inline-block transition-transform duration-300 group-hover:translate-x-0.5">→</span>
             </Link>
           </Reveal>
