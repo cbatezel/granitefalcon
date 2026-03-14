@@ -182,7 +182,7 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={status === "sending"}
-                    className="group inline-flex items-center gap-2.5 px-7 py-3.5 bg-[#F5C842] text-[#0d0d0d] text-sm font-sans font-medium tracking-wide hover:bg-[#e3b835] transition-all duration-300 hover:shadow-lg hover:shadow-[#F5C842]/20 disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="group inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-[#F5C842] text-[#0d0d0d] text-sm font-sans font-medium tracking-wide hover:bg-[#e3b835] transition-all duration-300 hover:shadow-lg hover:shadow-[#F5C842]/20 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {status === "sending" ? "Sending…" : <>Send Message<span className="inline-block transition-transform duration-300 group-hover:translate-x-0.5">→</span></>}
                   </button>
