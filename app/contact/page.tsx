@@ -66,7 +66,7 @@ export default function ContactPage() {
       <nav className={`fixed top-0 left-0 right-0 z-40 backdrop-blur-md bg-[#f5f0e8]/80 border-b border-[#0d0d0d]/5 transition-all duration-500 ${showIsland ? "opacity-0 pointer-events-none -translate-y-2" : "opacity-100"}`}>
         <div className="max-w-[1200px] mx-auto px-6 md:px-12 flex items-center justify-between h-14">
           <Link href="/" className="font-serif text-lg tracking-tight">AI Delivered</Link>
-          <Link href="/" className="text-xs font-sans font-medium text-[#0d0d0d]/40 hover:text-[#0d0d0d]/70 transition-colors duration-300">
+          <Link href="/" className="text-xs font-sans font-medium text-[#0d0d0d]/50 hover:text-[#0d0d0d]/70 transition-colors duration-300">
             ← Back
           </Link>
         </div>
@@ -83,11 +83,11 @@ export default function ContactPage() {
 
       {/* HEADER */}
       <section className="max-w-[1200px] mx-auto px-6 md:px-12 pt-36 pb-16 md:pt-44 md:pb-20">
-        <p className="hero-fade font-sans text-[11px] tracking-[0.2em] uppercase text-[#0d0d0d]/30 mb-8">Get in touch</p>
+        <p className="hero-fade font-sans text-[11px] tracking-[0.2em] uppercase text-[#0d0d0d]/40 mb-8">Get in touch</p>
         <h1 className="hero-headline font-serif text-[clamp(2.8rem,7vw,6rem)] leading-[0.98] tracking-tight max-w-3xl">
-          Let&apos;s figure out<br /><span className="text-[#0d0d0d]/15">what you actually need.</span>
+          Let&apos;s figure out<br /><span className="text-[#0d0d0d]/25">what you actually need.</span>
         </h1>
-        <p className="hero-fade hero-fade-2 font-sans text-base md:text-lg text-[#0d0d0d]/40 mt-8 max-w-md leading-relaxed">
+        <p className="hero-fade hero-fade-2 font-sans text-base md:text-lg text-[#0d0d0d]/50 mt-8 max-w-md leading-relaxed">
           No pitch. No pressure. Tell us what&apos;s slowing you down and we&apos;ll give you an honest answer.
         </p>
       </section>
@@ -102,10 +102,10 @@ export default function ContactPage() {
               {status === "sent" ? (
                 <div className="py-16">
                   <p className="font-serif text-3xl md:text-4xl mb-4">We&apos;ll be in touch.</p>
-                  <p className="font-sans text-sm text-[#0d0d0d]/40 leading-relaxed max-w-sm">
+                  <p className="font-sans text-sm text-[#0d0d0d]/50 leading-relaxed max-w-sm">
                     Thanks for reaching out. Expect to hear from us within one business day.
                   </p>
-                  <Link href="/" className="inline-block mt-8 text-xs font-sans font-medium text-[#0d0d0d]/30 hover:text-[#0d0d0d]/60 transition-colors duration-300 tracking-wide">
+                  <Link href="/" className="inline-block mt-8 text-xs font-sans font-medium text-[#0d0d0d]/40 hover:text-[#0d0d0d]/60 transition-colors duration-300 tracking-wide">
                     ← Back to home
                   </Link>
                 </div>
@@ -113,7 +113,7 @@ export default function ContactPage() {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div className="flex flex-col gap-2">
-                      <label htmlFor="name" className="font-sans text-[11px] tracking-[0.15em] uppercase text-[#0d0d0d]/30">
+                      <label htmlFor="name" className="font-sans text-[11px] tracking-[0.15em] uppercase text-[#0d0d0d]/40">
                         Name <span className="text-[#F5C842]">*</span>
                       </label>
                       <input
@@ -128,7 +128,7 @@ export default function ContactPage() {
                       />
                     </div>
                     <div className="flex flex-col gap-2">
-                      <label htmlFor="email" className="font-sans text-[11px] tracking-[0.15em] uppercase text-[#0d0d0d]/30">
+                      <label htmlFor="email" className="font-sans text-[11px] tracking-[0.15em] uppercase text-[#0d0d0d]/40">
                         Email <span className="text-[#F5C842]">*</span>
                       </label>
                       <input
@@ -145,7 +145,7 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex flex-col gap-2">
-                    <label htmlFor="company" className="font-sans text-[11px] tracking-[0.15em] uppercase text-[#0d0d0d]/30">
+                    <label htmlFor="company" className="font-sans text-[11px] tracking-[0.15em] uppercase text-[#0d0d0d]/40">
                       Company
                     </label>
                     <input
@@ -160,7 +160,7 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex flex-col gap-2">
-                    <label htmlFor="message" className="font-sans text-[11px] tracking-[0.15em] uppercase text-[#0d0d0d]/30">
+                    <label htmlFor="message" className="font-sans text-[11px] tracking-[0.15em] uppercase text-[#0d0d0d]/40">
                       What&apos;s slowing you down? <span className="text-[#F5C842]">*</span>
                     </label>
                     <textarea
@@ -196,19 +196,19 @@ export default function ContactPage() {
             <Reveal delay={150}>
               <div className="space-y-10">
                 <div>
-                  <p className="font-sans text-[11px] tracking-[0.15em] uppercase text-[#0d0d0d]/25 mb-3">Prefer email?</p>
-                  <a href="mailto:drew@aidelivered.com" className="font-sans text-sm text-[#0d0d0d]/50 hover:text-[#0d0d0d]/80 transition-colors duration-300 block">drew@aidelivered.com</a>
-                  <a href="mailto:casey@aidelivered.com" className="font-sans text-sm text-[#0d0d0d]/50 hover:text-[#0d0d0d]/80 transition-colors duration-300 block mt-1">casey@aidelivered.com</a>
+                  <p className="font-sans text-[11px] tracking-[0.15em] uppercase text-[#0d0d0d]/35 mb-3">Prefer email?</p>
+                  <a href="mailto:drew@aidelivered.com" className="font-sans text-sm text-[#0d0d0d]/60 hover:text-[#0d0d0d]/80 transition-colors duration-300 block">drew@aidelivered.com</a>
+                  <a href="mailto:casey@aidelivered.com" className="font-sans text-sm text-[#0d0d0d]/60 hover:text-[#0d0d0d]/80 transition-colors duration-300 block mt-1">casey@aidelivered.com</a>
                 </div>
                 <div className="border-t border-[#0d0d0d]/6 pt-10">
-                  <p className="font-sans text-[11px] tracking-[0.15em] uppercase text-[#0d0d0d]/25 mb-3">What to expect</p>
+                  <p className="font-sans text-[11px] tracking-[0.15em] uppercase text-[#0d0d0d]/35 mb-3">What to expect</p>
                   <ul className="space-y-3">
                     {[
                       "Response within one business day",
                       "A 15-min call to hear your problem",
                       "Honest feedback — even if we can't help",
                     ].map((item) => (
-                      <li key={item} className="flex items-start gap-3 font-sans text-sm text-[#0d0d0d]/35 leading-relaxed">
+                      <li key={item} className="flex items-start gap-3 font-sans text-sm text-[#0d0d0d]/45 leading-relaxed">
                         <span className="mt-2 w-1 h-1 rounded-full bg-[#F5C842] flex-shrink-0" />
                         {item}
                       </li>
@@ -225,8 +225,8 @@ export default function ContactPage() {
       {/* FOOTER */}
       <footer className="border-t border-[#0d0d0d]/6">
         <div className="max-w-[1200px] mx-auto px-6 md:px-12 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-          <span className="font-serif text-base text-[#0d0d0d]/30">AI Delivered</span>
-          <div className="font-sans text-xs text-[#0d0d0d]/20 flex gap-6">
+          <span className="font-serif text-base text-[#0d0d0d]/40">AI Delivered</span>
+          <div className="font-sans text-xs text-[#0d0d0d]/30 flex gap-6">
             <span>drew@aidelivered.com</span>
             <span>casey@aidelivered.com</span>
           </div>
